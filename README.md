@@ -39,6 +39,14 @@ databricks-complete-guide
 ├── 18_real_world_projects
 ├── 19_interview_preparation
 └── code-implementation
+
+data-architecture
+    ├── Lakehouse Architecture
+    ├── Medallion Architecture
+    ├── ETL vs ELT
+    ├── CDC
+    ├── SCD
+    └── Data Modeling
 ```
 
 ---
