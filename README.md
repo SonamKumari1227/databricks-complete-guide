@@ -19,34 +19,49 @@ This repository is designed for:
 ```text
 databricks-complete-guide
 │
-├── 01_databricks_fundamentals
-├── 02_compute_and_clusters
-├── 03_databricks_runtime
-├── 04_notebooks
-├── 05_dbfs_and_storage
-├── 06_delta_lake
-├── 07_unity_catalog
-├── 08_workflows
-├── 09_databricks_sql
-├── 10_data_engineering
-├── 11_streaming
-├── 12_auto_loader
-├── 13_delta_live_tables
-├── 14_performance_optimization
-├── 15_devops_and_cicd
-├── 16_monitoring_and_troubleshooting
-├── 17_security
-├── 18_real_world_projects
-├── 19_interview_preparation
-└── code-implementation
+├── 00_databricks_evolution.md
+├── 01_databricks_fundamentals.md
+├── 02_compute_and_clusters.md
+├── 02_01_cluster_types.md
+├── 03_databricks_runtime.md
+├── 04_notebooks.md
+├── 05_dbfs_and_storage.md
+├── 06_delta_lake.md
+├── 07_unity_catalog/              governance, permissions, lineage, sharing
+├── 08_workflows/                  jobs, dependencies, triggers, orchestration
+├── 09_databricks_sql/             warehouses, queries, dashboards, alerts
+├── 10_data_engineering/           medallion, bronze/silver/gold, incremental
+├── 11_streaming/                  checkpoints, watermarks, joins, production
+├── 12_auto_loader/                file detection, schema evolution, options
+├── 13_delta_live_tables/          declarative pipelines, expectations, CDC
+├── 14_performance_optimization/   execution model, layout, skew, cost
+├── 15_devops_and_cicd/            CLI, bundles, Git, testing, Terraform
+├── 16_monitoring_and_troubleshooting/  system tables, logs, incidents
+├── 17_security/                   identity, secrets, PII, network, audit
+├── 18_real_world_projects/        five end-to-end builds
+├── 19_interview_preparation/      technique, questions, scenarios, plan
+│
+└── data-architecture/
+    ├── lakehouse_architecture.md
+    ├── medallion_architecture.md
+    ├── etl_vs_elt.md
+    ├── change_data_capture.md
+    ├── slowly_changing_dimensions.md
+    └── data_modeling.md
+```
 
-data-architecture
-    ├── Lakehouse Architecture
-    ├── Medallion Architecture
-    ├── ETL vs ELT
-    ├── CDC
-    ├── SCD
-    └── Data Modeling
+Each topic folder has its own `README.md` with a reading order, and ends with an
+`interview_questions.md`. Runnable code lives inline in the topic files and in
+the five projects under `18_real_world_projects/`.
+
+**How to navigate:**
+
+```text
+Learning Databricks from scratch   → read 00 through 19 in order
+Preparing for an interview         → 19_interview_preparation, then the
+                                     interview_questions.md in each topic
+Building something specific        → 18_real_world_projects
+Understanding the concepts         → data-architecture/
 ```
 
 ---
